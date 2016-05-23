@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53C2D2B91CEA382500A7C61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2B81CEA382500A7C61D /* main.m */; };
+		53C2D2BC1CEA382500A7C61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2BB1CEA382500A7C61D /* AppDelegate.m */; };
+		53C2D2BF1CEA382500A7C61D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2BE1CEA382500A7C61D /* ViewController.m */; };
+		53C2D2C21CEA382500A7C61D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C2D2C01CEA382500A7C61D /* Main.storyboard */; };
+		53C2D2C41CEA382500A7C61D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C2D2C31CEA382500A7C61D /* Assets.xcassets */; };
+		53C2D2C71CEA382500A7C61D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C2D2C51CEA382500A7C61D /* LaunchScreen.storyboard */; };
+		53C2D2D21CEA382500A7C61D /* panchoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2D11CEA382500A7C61D /* panchoTests.m */; };
+		53C2D2DD1CEA3DC700A7C61D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53C2D2DC1CEA3DC700A7C61D /* MapKit.framework */; };
+		53C2D2E31CEA3F0F00A7C61D /* GPSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2E21CEA3F0F00A7C61D /* GPSManager.m */; };
+		53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2E61CEA44E200A7C61D /* TheMap.m */; };
+		53C2D2EA1CEA597E00A7C61D /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2E91CEA597E00A7C61D /* Annotation.m */; };
+		871CF18E30E90675C9BDA9AF /* libPods-pancho.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190366E918C806736497089F /* libPods-pancho.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53C2D2CE1CEA382500A7C61D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53C2D2AC1CEA382500A7C61D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53C2D2B31CEA382500A7C61D;
+			remoteInfo = pancho;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190366E918C806736497089F /* libPods-pancho.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pancho.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C2D2B41CEA382500A7C61D /* pancho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pancho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C2D2B81CEA382500A7C61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53C2D2BA1CEA382500A7C61D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53C2D2BB1CEA382500A7C61D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53C2D2BD1CEA382500A7C61D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		53C2D2BE1CEA382500A7C61D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		53C2D2C11CEA382500A7C61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53C2D2C31CEA382500A7C61D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53C2D2C61CEA382500A7C61D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53C2D2C81CEA382500A7C61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C2D2CD1CEA382500A7C61D /* panchoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = panchoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53C2D2D11CEA382500A7C61D /* panchoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = panchoTests.m; sourceTree = "<group>"; };
+		53C2D2D31CEA382500A7C61D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C2D2DC1CEA3DC700A7C61D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		53C2D2E11CEA3F0F00A7C61D /* GPSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPSManager.h; path = Managers/GPSManager.h; sourceTree = "<group>"; };
+		53C2D2E21CEA3F0F00A7C61D /* GPSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPSManager.m; path = Managers/GPSManager.m; sourceTree = "<group>"; };
+		53C2D2E51CEA44E200A7C61D /* TheMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TheMap.h; path = Map/TheMap.h; sourceTree = "<group>"; };
+		53C2D2E61CEA44E200A7C61D /* TheMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheMap.m; path = Map/TheMap.m; sourceTree = "<group>"; };
+		53C2D2E81CEA597E00A7C61D /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = Map/Annotation.h; sourceTree = "<group>"; };
+		53C2D2E91CEA597E00A7C61D /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = Map/Annotation.m; sourceTree = "<group>"; };
+		D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.release.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.release.xcconfig"; sourceTree = "<group>"; };
+		FCBC1A3339F95C2B638BC50E /* Pods-pancho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53C2D2B11CEA382500A7C61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C2D2DD1CEA3DC700A7C61D /* MapKit.framework in Frameworks */,
+				871CF18E30E90675C9BDA9AF /* libPods-pancho.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C2D2CA1CEA382500A7C61D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53C2D2AB1CEA382500A7C61D = {
+			isa = PBXGroup;
+			children = (
+				53C2D2B61CEA382500A7C61D /* pancho */,
+				53C2D2D01CEA382500A7C61D /* panchoTests */,
+				53C2D2B51CEA382500A7C61D /* Products */,
+				8AB09231B9C336C75E4E963E /* Pods */,
+				CCC1AB6D92464E424C0483DB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		53C2D2B51CEA382500A7C61D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2B41CEA382500A7C61D /* pancho.app */,
+				53C2D2CD1CEA382500A7C61D /* panchoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53C2D2B61CEA382500A7C61D /* pancho */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2E41CEA448900A7C61D /* Map */,
+				53C2D2E01CEA3E5400A7C61D /* WS */,
+				53C2D2DF1CEA3E4600A7C61D /* Models */,
+				53C2D2DE1CEA3E3400A7C61D /* Managers */,
+				53C2D2BA1CEA382500A7C61D /* AppDelegate.h */,
+				53C2D2BB1CEA382500A7C61D /* AppDelegate.m */,
+				53C2D2BD1CEA382500A7C61D /* ViewController.h */,
+				53C2D2BE1CEA382500A7C61D /* ViewController.m */,
+				53C2D2C01CEA382500A7C61D /* Main.storyboard */,
+				53C2D2C31CEA382500A7C61D /* Assets.xcassets */,
+				53C2D2C51CEA382500A7C61D /* LaunchScreen.storyboard */,
+				53C2D2C81CEA382500A7C61D /* Info.plist */,
+				53C2D2B71CEA382500A7C61D /* Supporting Files */,
+			);
+			path = pancho;
+			sourceTree = "<group>";
+		};
+		53C2D2B71CEA382500A7C61D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2B81CEA382500A7C61D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53C2D2D01CEA382500A7C61D /* panchoTests */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2D11CEA382500A7C61D /* panchoTests.m */,
+				53C2D2D31CEA382500A7C61D /* Info.plist */,
+			);
+			path = panchoTests;
+			sourceTree = "<group>";
+		};
+		53C2D2DE1CEA3E3400A7C61D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2E11CEA3F0F00A7C61D /* GPSManager.h */,
+				53C2D2E21CEA3F0F00A7C61D /* GPSManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		53C2D2DF1CEA3E4600A7C61D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		53C2D2E01CEA3E5400A7C61D /* WS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WS;
+			sourceTree = "<group>";
+		};
+		53C2D2E41CEA448900A7C61D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2E51CEA44E200A7C61D /* TheMap.h */,
+				53C2D2E61CEA44E200A7C61D /* TheMap.m */,
+				53C2D2E81CEA597E00A7C61D /* Annotation.h */,
+				53C2D2E91CEA597E00A7C61D /* Annotation.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		8AB09231B9C336C75E4E963E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCBC1A3339F95C2B638BC50E /* Pods-pancho.debug.xcconfig */,
+				D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CCC1AB6D92464E424C0483DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53C2D2DC1CEA3DC700A7C61D /* MapKit.framework */,
+				190366E918C806736497089F /* libPods-pancho.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53C2D2B31CEA382500A7C61D /* pancho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C2D2D61CEA382500A7C61D /* Build configuration list for PBXNativeTarget "pancho" */;
+			buildPhases = (
+				8E27427D299381DA454A8CED /* 📦 Check Pods Manifest.lock */,
+				53C2D2B01CEA382500A7C61D /* Sources */,
+				53C2D2B11CEA382500A7C61D /* Frameworks */,
+				53C2D2B21CEA382500A7C61D /* Resources */,
+				FFBA30F64789BF7CF68A18F8 /* 📦 Embed Pods Frameworks */,
+				12DAD8AC1525B9DC2B57C280 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pancho;
+			productName = pancho;
+			productReference = 53C2D2B41CEA382500A7C61D /* pancho.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53C2D2CC1CEA382500A7C61D /* panchoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53C2D2D91CEA382500A7C61D /* Build configuration list for PBXNativeTarget "panchoTests" */;
+			buildPhases = (
+				53C2D2C91CEA382500A7C61D /* Sources */,
+				53C2D2CA1CEA382500A7C61D /* Frameworks */,
+				53C2D2CB1CEA382500A7C61D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53C2D2CF1CEA382500A7C61D /* PBXTargetDependency */,
+			);
+			name = panchoTests;
+			productName = panchoTests;
+			productReference = 53C2D2CD1CEA382500A7C61D /* panchoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53C2D2AC1CEA382500A7C61D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Easy Taxi";
+				TargetAttributes = {
+					53C2D2B31CEA382500A7C61D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = YXQ78N6GKF;
+					};
+					53C2D2CC1CEA382500A7C61D = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 53C2D2B31CEA382500A7C61D;
+					};
+				};
+			};
+			buildConfigurationList = 53C2D2AF1CEA382500A7C61D /* Build configuration list for PBXProject "pancho" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53C2D2AB1CEA382500A7C61D;
+			productRefGroup = 53C2D2B51CEA382500A7C61D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53C2D2B31CEA382500A7C61D /* pancho */,
+				53C2D2CC1CEA382500A7C61D /* panchoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53C2D2B21CEA382500A7C61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C2D2C71CEA382500A7C61D /* LaunchScreen.storyboard in Resources */,
+				53C2D2C41CEA382500A7C61D /* Assets.xcassets in Resources */,
+				53C2D2C21CEA382500A7C61D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C2D2CB1CEA382500A7C61D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12DAD8AC1525B9DC2B57C280 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pancho/Pods-pancho-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E27427D299381DA454A8CED /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFBA30F64789BF7CF68A18F8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pancho/Pods-pancho-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53C2D2B01CEA382500A7C61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C2D2EA1CEA597E00A7C61D /* Annotation.m in Sources */,
+				53C2D2E31CEA3F0F00A7C61D /* GPSManager.m in Sources */,
+				53C2D2BF1CEA382500A7C61D /* ViewController.m in Sources */,
+				53C2D2BC1CEA382500A7C61D /* AppDelegate.m in Sources */,
+				53C2D2B91CEA382500A7C61D /* main.m in Sources */,
+				53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53C2D2C91CEA382500A7C61D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53C2D2D21CEA382500A7C61D /* panchoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53C2D2CF1CEA382500A7C61D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53C2D2B31CEA382500A7C61D /* pancho */;
+			targetProxy = 53C2D2CE1CEA382500A7C61D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53C2D2C01CEA382500A7C61D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C2D2C11CEA382500A7C61D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53C2D2C51CEA382500A7C61D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53C2D2C61CEA382500A7C61D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53C2D2D41CEA382500A7C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		53C2D2D51CEA382500A7C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53C2D2D71CEA382500A7C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCBC1A3339F95C2B638BC50E /* Pods-pancho.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = pancho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.EasyTaxiBeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		53C2D2D81CEA382500A7C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = pancho/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.EasyTaxiBeta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		53C2D2DA1CEA382500A7C61D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = panchoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.pancho.panchoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pancho.app/pancho";
+			};
+			name = Debug;
+		};
+		53C2D2DB1CEA382500A7C61D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = panchoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.pancho.panchoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/pancho.app/pancho";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53C2D2AF1CEA382500A7C61D /* Build configuration list for PBXProject "pancho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C2D2D41CEA382500A7C61D /* Debug */,
+				53C2D2D51CEA382500A7C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C2D2D61CEA382500A7C61D /* Build configuration list for PBXNativeTarget "pancho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C2D2D71CEA382500A7C61D /* Debug */,
+				53C2D2D81CEA382500A7C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53C2D2D91CEA382500A7C61D /* Build configuration list for PBXNativeTarget "panchoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C2D2DA1CEA382500A7C61D /* Debug */,
+				53C2D2DB1CEA382500A7C61D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53C2D2AC1CEA382500A7C61D /* Project object */;
+}
