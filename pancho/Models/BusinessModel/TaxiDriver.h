@@ -17,21 +17,9 @@
 - (instancetype)initWithDictionary:(NSDictionary*)dictionary;
 
 @property (strong, nonatomic) NSString *car_model;
-//@property (nonatomic) BOOL *isArravied;
 @property (strong, nonatomic) NSString *is_arravied;
 @property (strong, nonatomic) NSString *driver_name;
 @property (strong, nonatomic) NSString* license_plate;
 @property (strong, nonatomic) NSDictionary* position;
-
-//{
-//    "car_model": "Tesla Model",
-//    "is_arravied": false,
-//    "driver_name": "Foo Bar",
-//    "license_plate": "FOO-4242",
-//    "position": {
-//        "lat": -23.544775,
-//        "lng": -46.720251
-//    }
-//}
 
 @end

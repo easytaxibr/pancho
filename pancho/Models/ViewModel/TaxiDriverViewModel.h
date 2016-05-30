@@ -17,7 +17,6 @@
 @property (strong, readonly) NSString *is_arravied;
 @property (strong, readonly) NSString *driverName;
 @property (strong, readonly) NSString *licensePlate;
-@property (strong, readonly) NSString *position;
 @property (strong, readonly) NSNumber *latitude;
 @property (strong, readonly) NSNumber *longitude;
 

@@ -29,12 +29,8 @@
 -(NSNumber *)longitude{
     return _driver.position[@"lng"];
 }
-
 - (BOOL)isArravied{
-    return true;
+    return _driver.is_arravied.boolValue;
 }
-
-
-
 
 @end
