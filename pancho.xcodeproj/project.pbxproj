@@ -19,6 +19,7 @@
 		53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2E61CEA44E200A7C61D /* TheMap.m */; };
 		53C2D2EA1CEA597E00A7C61D /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2E91CEA597E00A7C61D /* Annotation.m */; };
 		871CF18E30E90675C9BDA9AF /* libPods-pancho.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190366E918C806736497089F /* libPods-pancho.a */; };
+		8BF02F7C1CFBBE7B005AD546 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F7B1CFBBE7B005AD546 /* NetworkClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		53C2D2E61CEA44E200A7C61D /* TheMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TheMap.m; path = Map/TheMap.m; sourceTree = "<group>"; };
 		53C2D2E81CEA597E00A7C61D /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = Map/Annotation.h; sourceTree = "<group>"; };
 		53C2D2E91CEA597E00A7C61D /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = Map/Annotation.m; sourceTree = "<group>"; };
+		8BF02F7A1CFBBE7B005AD546 /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkClient.h; path = WS/NetworkClient.h; sourceTree = "<group>"; };
+		8BF02F7B1CFBBE7B005AD546 /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkClient.m; path = WS/NetworkClient.m; sourceTree = "<group>"; };
 		D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.release.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.release.xcconfig"; sourceTree = "<group>"; };
 		FCBC1A3339F95C2B638BC50E /* Pods-pancho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,6 +156,8 @@
 		53C2D2E01CEA3E5400A7C61D /* WS */ = {
 			isa = PBXGroup;
 			children = (
+				8BF02F7A1CFBBE7B005AD546 /* NetworkClient.h */,
+				8BF02F7B1CFBBE7B005AD546 /* NetworkClient.m */,
 			);
 			name = WS;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 				53C2D2B21CEA382500A7C61D /* Resources */,
 				FFBA30F64789BF7CF68A18F8 /* 📦 Embed Pods Frameworks */,
 				12DAD8AC1525B9DC2B57C280 /* 📦 Copy Pods Resources */,
+				39253350E8425434AC91DADB /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,7 +244,7 @@
 				TargetAttributes = {
 					53C2D2B31CEA382500A7C61D = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = YXQ78N6GKF;
+						DevelopmentTeam = 54JDK55DR5;
 					};
 					53C2D2CC1CEA382500A7C61D = {
 						CreatedOnToolsVersion = 7.3;
@@ -301,6 +307,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pancho/Pods-pancho-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		39253350E8425434AC91DADB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pancho/Pods-pancho-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8E27427D299381DA454A8CED /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,6 +363,7 @@
 				53C2D2E31CEA3F0F00A7C61D /* GPSManager.m in Sources */,
 				53C2D2BF1CEA382500A7C61D /* ViewController.m in Sources */,
 				53C2D2BC1CEA382500A7C61D /* AppDelegate.m in Sources */,
+				8BF02F7C1CFBBE7B005AD546 /* NetworkClient.m in Sources */,
 				53C2D2B91CEA382500A7C61D /* main.m in Sources */,
 				53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */,
 			);
@@ -473,10 +495,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pancho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.pancho;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -486,10 +510,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pancho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.pancho;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
