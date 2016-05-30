@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet TheMap *map;
 @property (weak, nonatomic) NSTimer* taxiTimer;
 @property BOOL mapMoving;
-@property (weak, nonatomic) NSString *session;
+@property (strong, nonatomic) NSString *session;
 @property CLLocationCoordinate2D current;
 @property float angle;
 @property Annotation *_annotation;
@@ -27,9 +27,8 @@
     [super viewDidLoad];
     self.map.delegate = self;
     self.map.rotateEnabled = false;
-    
-    [self centerUserLocation];
     [self configSession];
+    [self centerUserLocation];
     [self configTaxisTimer:3.0];
 }
 
@@ -42,7 +41,7 @@
 }
 
 - (void)configSession {
-    int r = arc4random_uniform(1000);
+    int r = arc4random_uniform(10000);
     _session = [NSString stringWithFormat:@"%d", r];
 }
 
