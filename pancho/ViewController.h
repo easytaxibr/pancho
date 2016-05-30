@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIImage+Rotate.h"
 #import "TaxiClient.h"
 #import "TaxiDriverViewModel.h"
 

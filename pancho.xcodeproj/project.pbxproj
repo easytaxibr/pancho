@@ -23,6 +23,7 @@
 		8BF02F7F1CFBE5A8005AD546 /* TaxiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F7E1CFBE5A8005AD546 /* TaxiClient.m */; };
 		8BF02F841CFBE62F005AD546 /* TaxiDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F831CFBE62F005AD546 /* TaxiDriver.m */; };
 		8BF02F8A1CFC11DB005AD546 /* TaxiDriverViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F891CFC11DB005AD546 /* TaxiDriverViewModel.m */; };
+		8BF02F8E1CFC9C59005AD546 /* UIImage+Rotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F8D1CFC9C59005AD546 /* UIImage+Rotate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,8 @@
 		8BF02F831CFBE62F005AD546 /* TaxiDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiDriver.m; path = Models/BusinessModel/TaxiDriver.m; sourceTree = "<group>"; };
 		8BF02F881CFC11DB005AD546 /* TaxiDriverViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaxiDriverViewModel.h; path = Models/ViewModel/TaxiDriverViewModel.h; sourceTree = "<group>"; };
 		8BF02F891CFC11DB005AD546 /* TaxiDriverViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiDriverViewModel.m; path = Models/ViewModel/TaxiDriverViewModel.m; sourceTree = "<group>"; };
+		8BF02F8C1CFC9C59005AD546 /* UIImage+Rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Rotate.h"; path = "Utils/UIImage+Rotate.h"; sourceTree = "<group>"; };
+		8BF02F8D1CFC9C59005AD546 /* UIImage+Rotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Rotate.m"; path = "Utils/UIImage+Rotate.m"; sourceTree = "<group>"; };
 		D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.release.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.release.xcconfig"; sourceTree = "<group>"; };
 		FCBC1A3339F95C2B638BC50E /* Pods-pancho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +115,7 @@
 		53C2D2B61CEA382500A7C61D /* pancho */ = {
 			isa = PBXGroup;
 			children = (
+				8BF02F8B1CFC9C2B005AD546 /* Utils */,
 				53C2D2E41CEA448900A7C61D /* Map */,
 				53C2D2E01CEA3E5400A7C61D /* WS */,
 				53C2D2DF1CEA3E4600A7C61D /* Models */,
@@ -211,6 +215,15 @@
 				8BF02F831CFBE62F005AD546 /* TaxiDriver.m */,
 			);
 			name = BusinessModel;
+			sourceTree = "<group>";
+		};
+		8BF02F8B1CFC9C2B005AD546 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8BF02F8C1CFC9C59005AD546 /* UIImage+Rotate.h */,
+				8BF02F8D1CFC9C59005AD546 /* UIImage+Rotate.m */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		CCC1AB6D92464E424C0483DB /* Frameworks */ = {
@@ -399,6 +412,7 @@
 				8BF02F7C1CFBBE7B005AD546 /* NetworkClient.m in Sources */,
 				53C2D2B91CEA382500A7C61D /* main.m in Sources */,
 				53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */,
+				8BF02F8E1CFC9C59005AD546 /* UIImage+Rotate.m in Sources */,
 				8BF02F841CFBE62F005AD546 /* TaxiDriver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
