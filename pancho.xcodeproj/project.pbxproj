@@ -20,6 +20,8 @@
 		53C2D2EA1CEA597E00A7C61D /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2E91CEA597E00A7C61D /* Annotation.m */; };
 		871CF18E30E90675C9BDA9AF /* libPods-pancho.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 190366E918C806736497089F /* libPods-pancho.a */; };
 		8BF02F7C1CFBBE7B005AD546 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F7B1CFBBE7B005AD546 /* NetworkClient.m */; };
+		8BF02F7F1CFBE5A8005AD546 /* TaxiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F7E1CFBE5A8005AD546 /* TaxiClient.m */; };
+		8BF02F841CFBE62F005AD546 /* TaxiDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BF02F831CFBE62F005AD546 /* TaxiDriver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,10 @@
 		53C2D2E91CEA597E00A7C61D /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = Map/Annotation.m; sourceTree = "<group>"; };
 		8BF02F7A1CFBBE7B005AD546 /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkClient.h; path = WS/NetworkClient.h; sourceTree = "<group>"; };
 		8BF02F7B1CFBBE7B005AD546 /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkClient.m; path = WS/NetworkClient.m; sourceTree = "<group>"; };
+		8BF02F7D1CFBE5A8005AD546 /* TaxiClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaxiClient.h; path = WS/TaxiClient.h; sourceTree = "<group>"; };
+		8BF02F7E1CFBE5A8005AD546 /* TaxiClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiClient.m; path = WS/TaxiClient.m; sourceTree = "<group>"; };
+		8BF02F821CFBE62F005AD546 /* TaxiDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaxiDriver.h; path = Models/BusinessModel/TaxiDriver.h; sourceTree = "<group>"; };
+		8BF02F831CFBE62F005AD546 /* TaxiDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiDriver.m; path = Models/BusinessModel/TaxiDriver.m; sourceTree = "<group>"; };
 		D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.release.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.release.xcconfig"; sourceTree = "<group>"; };
 		FCBC1A3339F95C2B638BC50E /* Pods-pancho.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pancho.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pancho/Pods-pancho.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +155,8 @@
 		53C2D2DF1CEA3E4600A7C61D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8BF02F811CFBE606005AD546 /* BusinessModel */,
+				8BF02F801CFBE5F8005AD546 /* ViewModel */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -158,6 +166,8 @@
 			children = (
 				8BF02F7A1CFBBE7B005AD546 /* NetworkClient.h */,
 				8BF02F7B1CFBBE7B005AD546 /* NetworkClient.m */,
+				8BF02F7D1CFBE5A8005AD546 /* TaxiClient.h */,
+				8BF02F7E1CFBE5A8005AD546 /* TaxiClient.m */,
 			);
 			name = WS;
 			sourceTree = "<group>";
@@ -180,6 +190,22 @@
 				D9F076835341FBBA6024E2A6 /* Pods-pancho.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		8BF02F801CFBE5F8005AD546 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		8BF02F811CFBE606005AD546 /* BusinessModel */ = {
+			isa = PBXGroup;
+			children = (
+				8BF02F821CFBE62F005AD546 /* TaxiDriver.h */,
+				8BF02F831CFBE62F005AD546 /* TaxiDriver.m */,
+			);
+			name = BusinessModel;
 			sourceTree = "<group>";
 		};
 		CCC1AB6D92464E424C0483DB /* Frameworks */ = {
@@ -363,9 +389,11 @@
 				53C2D2E31CEA3F0F00A7C61D /* GPSManager.m in Sources */,
 				53C2D2BF1CEA382500A7C61D /* ViewController.m in Sources */,
 				53C2D2BC1CEA382500A7C61D /* AppDelegate.m in Sources */,
+				8BF02F7F1CFBE5A8005AD546 /* TaxiClient.m in Sources */,
 				8BF02F7C1CFBBE7B005AD546 /* NetworkClient.m in Sources */,
 				53C2D2B91CEA382500A7C61D /* main.m in Sources */,
 				53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */,
+				8BF02F841CFBE62F005AD546 /* TaxiDriver.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
