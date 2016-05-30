@@ -91,9 +91,6 @@
     return MyPin;
 }
 
--(void)mapView:(MKMapView *)mapView didBeginDraggingMarker:(MKMapView *)marker{
-    self.mapMoving = TRUE;
-}
 
 
 @end
