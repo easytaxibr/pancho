@@ -10,4 +10,13 @@
 
 @implementation TaxiClient
 
++ (id)shared{
+    static TaxiClient *sharedTaxiClient = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedTaxiClient = [[self alloc] init];
+    });
+    return sharedTaxiClient;
+}
+
 @end

@@ -8,14 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+@protocol TaxiDriver
+
+@end
+
 @interface TaxiDriver : NSObject
 
-@property (weak, nonatomic) NSString *cardModel;
-@property (nonatomic) BOOL *isArravied;
-@property (weak, nonatomic) NSString *driverName;
-@property (weak, nonatomic) NSString *licensePlate;
-@property (weak, nonatomic) NSNumber *latitude;
-@property (weak, nonatomic) NSNumber *longitude;
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary;
+
+@property (strong, nonatomic) NSString *car_model;
+//@property (nonatomic) BOOL *isArravied;
+@property (strong, nonatomic) NSString *is_arravied;
+@property (strong, nonatomic) NSString *driver_name;
+@property (strong, nonatomic) NSString* license_plate;
+@property (strong, nonatomic) NSDictionary* position;
 
 //{
 //    "car_model": "Tesla Model",

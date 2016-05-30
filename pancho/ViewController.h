@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TaxiClient.h"
+#import "TaxiDriverViewModel.h"
 
 @interface ViewController : UIViewController
 @property (readonly, nonatomic) NSMutableDictionary *locationDictionary;

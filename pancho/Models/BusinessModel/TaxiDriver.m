@@ -10,4 +10,14 @@
 
 @implementation TaxiDriver
 
+- (instancetype)initWithDictionary:(NSDictionary*)dictionary {
+    if (self = [super init]) {
+        self.car_model = dictionary[@"car_model"];
+        self.driver_name = dictionary[@"driver_name"];
+        self.license_plate = dictionary[@"license_plate"];
+        self.position = dictionary[@"position"];
+    }
+    return self;
+}
+
 @end

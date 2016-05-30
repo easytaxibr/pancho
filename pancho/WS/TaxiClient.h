@@ -7,8 +7,11 @@
 //
 
 #import "NetworkClient.h"
-#define ENDPOINT @"http://localhost:55/api/taxi-position/the-taxi?session=1"
+#import "TaxiDriver.h"
+#define ENDPOINT @"http://localhost:55/api/taxi-position/the-taxi?session=34"
 
 @interface TaxiClient : NetworkClient
+
++ (id)shared;
 
 @end
