@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E4A0B21D07417B00244066 /* TaxiDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A0B11D07417B00244066 /* TaxiDriver.m */; };
+		02E4A0B51D0763EC00244066 /* URLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E4A0B41D0763EC00244066 /* URLManager.m */; };
 		53C2D2B91CEA382500A7C61D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2B81CEA382500A7C61D /* main.m */; };
 		53C2D2BC1CEA382500A7C61D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2BB1CEA382500A7C61D /* AppDelegate.m */; };
 		53C2D2BF1CEA382500A7C61D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53C2D2BE1CEA382500A7C61D /* ViewController.m */; };
@@ -32,6 +34,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E4A0B01D07417B00244066 /* TaxiDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TaxiDriver.h; path = Map/TaxiDriver.h; sourceTree = "<group>"; };
+		02E4A0B11D07417B00244066 /* TaxiDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TaxiDriver.m; path = Map/TaxiDriver.m; sourceTree = "<group>"; };
+		02E4A0B31D0763EC00244066 /* URLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = URLManager.h; path = Managers/URLManager.h; sourceTree = "<group>"; };
+		02E4A0B41D0763EC00244066 /* URLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = URLManager.m; path = Managers/URLManager.m; sourceTree = "<group>"; };
 		190366E918C806736497089F /* libPods-pancho.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pancho.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C2D2B41CEA382500A7C61D /* pancho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pancho.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C2D2B81CEA382500A7C61D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -139,6 +145,8 @@
 			children = (
 				53C2D2E11CEA3F0F00A7C61D /* GPSManager.h */,
 				53C2D2E21CEA3F0F00A7C61D /* GPSManager.m */,
+				02E4A0B31D0763EC00244066 /* URLManager.h */,
+				02E4A0B41D0763EC00244066 /* URLManager.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -164,6 +172,8 @@
 				53C2D2E61CEA44E200A7C61D /* TheMap.m */,
 				53C2D2E81CEA597E00A7C61D /* Annotation.h */,
 				53C2D2E91CEA597E00A7C61D /* Annotation.m */,
+				02E4A0B01D07417B00244066 /* TaxiDriver.h */,
+				02E4A0B11D07417B00244066 /* TaxiDriver.m */,
 			);
 			name = Map;
 			sourceTree = "<group>";
@@ -199,6 +209,7 @@
 				53C2D2B21CEA382500A7C61D /* Resources */,
 				FFBA30F64789BF7CF68A18F8 /* 📦 Embed Pods Frameworks */,
 				12DAD8AC1525B9DC2B57C280 /* 📦 Copy Pods Resources */,
+				9E474AAECCEDE9D212088963 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,7 +249,7 @@
 				TargetAttributes = {
 					53C2D2B31CEA382500A7C61D = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = YXQ78N6GKF;
+						DevelopmentTeam = 9WJKK289EM;
 					};
 					53C2D2CC1CEA382500A7C61D = {
 						CreatedOnToolsVersion = 7.3;
@@ -316,6 +327,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		9E474AAECCEDE9D212088963 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pancho/Pods-pancho-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FFBA30F64789BF7CF68A18F8 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +369,8 @@
 				53C2D2BF1CEA382500A7C61D /* ViewController.m in Sources */,
 				53C2D2BC1CEA382500A7C61D /* AppDelegate.m in Sources */,
 				53C2D2B91CEA382500A7C61D /* main.m in Sources */,
+				02E4A0B51D0763EC00244066 /* URLManager.m in Sources */,
+				02E4A0B21D07417B00244066 /* TaxiDriver.m in Sources */,
 				53C2D2E71CEA44E200A7C61D /* TheMap.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,10 +501,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pancho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.pancho;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -486,10 +516,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = pancho/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.easytaxi.pancho;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
