@@ -16,6 +16,8 @@
 Annotation *ann;
 TaxiDriver *taxiDriver;
 
+BOOL tracking;
+
 @interface ViewController () <MKMapViewDelegate>
 
 @property (weak, nonatomic) IBOutlet TheMap *map;
@@ -30,10 +32,11 @@ TaxiDriver *taxiDriver;
     
     ann = [[Annotation alloc] init];
     taxiDriver = [[TaxiDriver alloc] init];
+    tracking = NO;
     
 }
 
-//No momento o botão acha e centraliza o motorista de taxi 36
+//No momento o botão acha e centraliza o motorista do taxi 40, atualizando sua posição a cada 3 segundos
 - (IBAction)currentLocationButtonPressed:(id)sender {
     
     //Método para mostrar minha localização
@@ -44,15 +47,21 @@ TaxiDriver *taxiDriver;
 //    }];
     
     
+    //A cada 3 segundos a posição do taxi é atualizada
+    NSTimer *timer = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(startTracking) userInfo:nil repeats:YES];
+    [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    
+}
+
+- (void) startTracking {
     //Obtendo coordenadas do taxi no mapa
-    [URLManager getTaxiLocationWithTaxiNumber:36 AndCompletionHandler:^(TaxiDriver *taxi) {
+    [URLManager getTaxiLocationWithTaxiNumber:40 AndCompletionHandler:^(TaxiDriver *taxi) {
         taxiDriver = taxi;
         ann.coordinate = taxiDriver.coordinate;
         [self.map addAnnotation:ann];
         [self.map centerMapOnLocation:ann];
         
     }];
-    
 }
 
 

@@ -16,7 +16,7 @@ static NSString * const BaseURLString = @"http://localhost:8080/api/taxi-positio
 //Recebe número do taxi e retorna suas coordenadas (latitude e longitude)
 +(void) getTaxiLocationWithTaxiNumber: (int) taxiNumber AndCompletionHandler: (void(^)(TaxiDriver *taxi)) callback {
     
-    //Busca a URL e retorna os dados do táxi cujo número é dado (36)
+    //Busca a URL e retorna os dados do táxi cujo número é dado (40)
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSDictionary *parameters = @{@"session":[NSNumber numberWithInt:taxiNumber]};
     
