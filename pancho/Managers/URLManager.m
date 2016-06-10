@@ -16,20 +16,20 @@ static NSString * const BaseURLString = @"http://localhost:8080/api/taxi-positio
 //Recebe número do taxi e retorna suas coordenadas (latitude e longitude)
 +(void) getTaxiLocationWithTaxiNumber: (int) taxiNumber AndCompletionHandler: (void(^)(TaxiDriver *taxi)) callback {
     
-    //Busca a URL e retorna os dados do táxi cujo número é dado (40)
+    //Busca a URL e retorna os dados do táxi cujo número é dado (50)
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSDictionary *parameters = @{@"session":[NSNumber numberWithInt:taxiNumber]};
     
+    TaxiDriver *taxiDriverLocation = [TaxiDriver sharedManager];
+    
     [manager GET:BaseURLString parameters: parameters progress:nil success:^(NSURLSessionTask *task, NSDictionary *infos) {
-        
-        TaxiDriver *taxiDriverLocation = [[TaxiDriver alloc] init];
         
         NSDictionary *position = [infos objectForKey:@"position"];
         NSNumber *lat = [position objectForKey:@"lat"];
         NSNumber *lng = [position objectForKey:@"lng"];
 
         CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake(lat.doubleValue, lng.doubleValue);
-        taxiDriverLocation.coordinate = coordinate;
+        taxiDriverLocation.newCoordinate = coordinate;
         
         callback(taxiDriverLocation);
         

@@ -16,6 +16,7 @@
 Annotation *ann;
 TaxiDriver *taxiDriver;
 
+BOOL firstTime;
 BOOL tracking;
 
 @interface ViewController () <MKMapViewDelegate>
@@ -31,12 +32,13 @@ BOOL tracking;
     self.map.delegate = self;
     
     ann = [[Annotation alloc] init];
-    taxiDriver = [[TaxiDriver alloc] init];
+    taxiDriver = [TaxiDriver sharedManager];
+    firstTime = YES;
     tracking = NO;
     
 }
 
-//No momento o botão acha e centraliza o motorista do taxi 40, atualizando sua posição a cada 3 segundos
+//No momento o botão acha e centraliza o motorista do taxi 50, atualizando sua posição a cada 3 segundos
 - (IBAction)currentLocationButtonPressed:(id)sender {
     
     //Método para mostrar minha localização
@@ -47,21 +49,34 @@ BOOL tracking;
 //    }];
     
     
+    
     //A cada 3 segundos a posição do taxi é atualizada
     NSTimer *timer = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(startTracking) userInfo:nil repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
-    
+
 }
 
 - (void) startTracking {
-    //Obtendo coordenadas do taxi no mapa
-    [URLManager getTaxiLocationWithTaxiNumber:40 AndCompletionHandler:^(TaxiDriver *taxi) {
+   
+    //Salva a última coordenada encontrada antes de atualizá-la
+    taxiDriver.lastCoordinate = taxiDriver.newCoordinate;
+
+    //Obtendo coordenadas do taxi 50 no mapa
+    [URLManager getTaxiLocationWithTaxiNumber:50 AndCompletionHandler:^(TaxiDriver *taxi) {
+        
         taxiDriver = taxi;
-        ann.coordinate = taxiDriver.coordinate;
+        ann.coordinate = taxiDriver.newCoordinate;
         [self.map addAnnotation:ann];
-        [self.map centerMapOnLocation:ann];
+        
+        if (firstTime == YES) {
+            firstTime = NO;
+            
+            //Para que a tela fique centralizada no taxi na primeira vez que o botão é clicado
+            [self.map centerMapOnLocation:ann];
+        }
         
     }];
+    
 }
 
 

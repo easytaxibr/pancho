@@ -10,10 +10,14 @@
 #import <MapKit/MapKit.h>
 
 @interface TaxiDriver : NSObject <MKAnnotation>  {
-    CLLocationCoordinate2D coordinate;
+    CLLocationCoordinate2D lastCoordinate;
+    CLLocationCoordinate2D newCoordinate;
 }
 
-@property (nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D lastCoordinate;
+@property (nonatomic, assign) CLLocationCoordinate2D newCoordinate;
 @property (nonatomic, assign) MKAnnotationView *pinView;
+
++ (id)sharedManager;
 
 @end
